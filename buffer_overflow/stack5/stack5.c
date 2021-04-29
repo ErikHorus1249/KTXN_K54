@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+	int cookie = 0;
+	char buf[16];
+	printf("&buf : %p, &cookie : %p\n ", buf, &cookie);
+	gets(buf);
+	if (cookie == 0x000D0A00){
+		printf("you lose !\n");
+	}
+}
