@@ -3,7 +3,7 @@
 
 void segv_handler(int signal){
     printf("you still lose !\n");
-    about();
+    abort();
 }
 
 void init(){
