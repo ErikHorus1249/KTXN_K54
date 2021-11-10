@@ -1,5 +1,6 @@
 gcc -fno-stack-protector -ggdb -mpreferredstack-boundary=2 . /stack1.c -o stack1
 
+
 cat /proc/sys/kernel/randomize_va_space 
 
 sudo bash -c 'echo "kernel.randomize_va_space = 0" >> /etc/sysctl.conf'
